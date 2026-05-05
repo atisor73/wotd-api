@@ -45,7 +45,9 @@ function checkWord() {
   const wordsArray = Array.from(wordSet);
 
   if (wordSet.has(word)) {
-    result.textContent = `"${input.value}" has already been used.`;
+    result.innerHTML = `
+      <span class="used">"${input.value}" has already been used.</span>
+    `;
     return;
   }
 
@@ -58,15 +60,17 @@ function checkWord() {
 
   if (similar.length > 0) {
     result.innerHTML = `
-      "${input.value}" has not been used yet.
+      <span class="similar">"${input.value}" has not been used yet.</span>
       <br>
       <span style="color:#787878; font-weight:normal !important">⚠️ similar word(s) previously used: ${similarText}</span>
     `;
-    // result.textContent = `"${input.value}" has not been used yet. \n⚠️ Similar: ${similar.join(", ")}`;
   } else {
-    result.textContent = `"${input.value}" has not been used yet.`;
+    result.innerHTML = `
+      <span class="new">"${input.value}" has not been used yet.</span>
+    `;
   }
 }
+
 
 
 // Find substrings
