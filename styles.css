@@ -1,0 +1,54 @@
+body {
+  /* font-family: "Special Elite", monospace; */
+  /* font-family: "Courier Prime", monospace; */
+  font-family: "IBM Plex Mono", monospace;
+  /* font-family: "DM Mono", monospace; */
+  /* font-family: "Space Mono", monospace; */
+  /* font-family: "Cutive Mono", monospace;  */
+  /* font-family: system-ui, sans-serif; */
+
+  background: #f3f3f3;
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 0 20px;
+  line-height: 1.5;
+
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  font-size: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+  border-radius: 5px;
+  border: 1px solid #898989;
+}
+input:focus {
+  outline: none;
+  border: 1px solid #800000; /* maroon */
+  box-shadow: 0 0 0 1px rgba(128, 0, 0, 0.2);
+}
+
+button {
+  padding: 10px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #898989;
+}
+
+#result {
+  margin-top: 30px;
+  font-weight: 600;
+  color: #800000;
+}
+
+.site-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover; /*contain*/
+  display: block;
+  margin-bottom: 20px;
+
+}
